@@ -19,7 +19,13 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
     private var keys: Int = 0
     private var u = 'a'
 
-    var country = arrayOf("ROT1", "ROT2", "ROT3", "ROT4", "ROT5", "ROT6", "ROT7", "ROT8", "ROT9", "ROT10", "ROT11", "ROT12", "ROT13")
+    var country = arrayOf(
+        "ROT1", "ROT2", "ROT3", "ROT4", "ROT5",
+        "ROT6", "ROT7", "ROT8", "ROT9", "ROT10",
+        "ROT11", "ROT12", "ROT13", "ROT14", "ROT15",
+        "ROT16", "ROT17", "ROT18", "ROT19", "ROT20",
+        "ROT21", "ROT22", "ROT23", "ROT24", "ROT25"
+    )
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -67,7 +73,12 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
         binding.myReceiveText.setText(s)
     }
 
-    override fun onItemSelected(adapterView: AdapterView<*>?, view: View?, position: Int, id: Long) {
+    override fun onItemSelected(
+        adapterView: AdapterView<*>?,
+        view: View?,
+        position: Int,
+        id: Long
+    ) {
         when (val itemPosition = Integer.valueOf(position)) {
             0 -> {
                 keys = itemPosition + 1
@@ -132,6 +143,66 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
             12 -> {
                 keys = itemPosition + 1
                 u = 'm'
+                caesarCipherROT(binding.myEditText.text.toString(), keys, u)
+            }
+            13 -> {
+                keys = itemPosition + 1
+                u = 'n'
+                caesarCipherROT(binding.myEditText.text.toString(), keys, u)
+            }
+            14 -> {
+                keys = itemPosition + 1
+                u = 'o'
+                caesarCipherROT(binding.myEditText.text.toString(), keys, u)
+            }
+            15 -> {
+                keys = itemPosition + 1
+                u = 'p'
+                caesarCipherROT(binding.myEditText.text.toString(), keys, u)
+            }
+            16 -> {
+                keys = itemPosition + 1
+                u = 'q'
+                caesarCipherROT(binding.myEditText.text.toString(), keys, u)
+            }
+            17 -> {
+                keys = itemPosition + 1
+                u = 'r'
+                caesarCipherROT(binding.myEditText.text.toString(), keys, u)
+            }
+            18 -> {
+                keys = itemPosition + 1
+                u = 's'
+                caesarCipherROT(binding.myEditText.text.toString(), keys, u)
+            }
+            19 -> {
+                keys = itemPosition + 1
+                u = 't'
+                caesarCipherROT(binding.myEditText.text.toString(), keys, u)
+            }
+            20 -> {
+                keys = itemPosition + 1
+                u = 'u'
+                caesarCipherROT(binding.myEditText.text.toString(), keys, u)
+            }
+            21 -> {
+                keys = itemPosition + 1
+                u = 'v'
+                caesarCipherROT(binding.myEditText.text.toString(), keys, u)
+            }
+            22 -> {
+                keys = itemPosition + 1
+                u = 'w'
+                caesarCipherROT(binding.myEditText.text.toString(), keys, u)
+            }
+            23 -> {
+                keys = itemPosition + 1
+                u = 'x'
+                caesarCipherROT(binding.myEditText.text.toString(), keys, u)
+            }
+            24 -> {
+                keys = itemPosition + 1
+                u = 'y'
                 caesarCipherROT(binding.myEditText.text.toString(), keys, u)
             }
         }
