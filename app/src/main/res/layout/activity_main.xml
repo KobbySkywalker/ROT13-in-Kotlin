@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7AA4A8"
+    tools:context=".MainActivity">
+
+    <!-- This text view is used to show the
+        output of encrypted or decrypted message -->
+
+    <!-- This text view is used to show
+        the text "Caesar Cipher AAlgorithm" -->
+
+    <!-- Button to perform the operations
+        to encrypt the message-->
+
+    <!-- Edit text to take input of message
+        which user want to encrypt-->
+
+    <EditText
+        android:id="@+id/myEditText"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="27dp"
+        android:background="#A8BDD1"
+        android:hint="Enter Your Text"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/myReceiveText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myEditText"
+        app:layout_constraintVertical_bias="0.485" />
+
+    <EditText
+        android:id="@+id/myReceiveText"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="124dp"
+        android:background="#A8BDD1"
+        android:hint="Enter Your Text"
+        android:focusable="false"
+        android:clickable="false"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!--    -->
+<!--    <EditText-->
+<!--        android:id="@+id/inputMessage"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:layout_marginStart="32dp"-->
+<!--        android:layout_marginEnd="32dp"-->
+<!--        android:hint="Your Message"-->
+<!--        android:textColor="@color/black"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/ciphEdt"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tV2" />-->
+
+<!--    &lt;!&ndash; Edit text to take input of ciphertext-->
+<!--        using which encryption will be done &ndash;&gt;-->
+<!--    <EditText-->
+<!--        android:id="@+id/ciphEdt"-->
+<!--        android:layout_width="356dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginStart="29dp"-->
+<!--        android:layout_marginEnd="29dp"-->
+<!--        android:layout_marginBottom="17dp"-->
+<!--        android:hint="Cipher Text"-->
+<!--        android:textColor="@color/black"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/key_dt"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/inputMessage" />-->
+
+<!--    &lt;!&ndash; Edit text to take input of key using-->
+<!--        which message will be decrypted &ndash;&gt;-->
+<!--    <EditText-->
+<!--        android:id="@+id/key_dt"-->
+<!--        android:layout_width="356dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginStart="29dp"-->
+<!--        android:layout_marginEnd="29dp"-->
+<!--        android:layout_marginBottom="21dp"-->
+<!--        android:hint="Key"-->
+<!--        android:textColor="@color/black"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/btndecrypt"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/ciphEdt" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
